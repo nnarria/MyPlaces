@@ -23,7 +23,67 @@
 		25BFE31C1D43B92F00914B86 /* VistaMapaRutaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFE31B1D43B92F00914B86 /* VistaMapaRutaController.swift */; };
 		25BFE31E1D43DB0500914B86 /* VistaQRController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFE31D1D43DB0500914B86 /* VistaQRController.swift */; };
 		25BFE3201D43ED4800914B86 /* VistaCamaraQRController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFE31F1D43ED4800914B86 /* VistaCamaraQRController.swift */; };
+		25BFE3271D4401BE00914B86 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE3251D4401BE00914B86 /* Interface.storyboard */; };
+		25BFE3291D4401BE00914B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE3281D4401BE00914B86 /* Assets.xcassets */; };
+		25BFE3301D4401BE00914B86 /* MyPlacesWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 25BFE32F1D4401BE00914B86 /* MyPlacesWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25BFE3371D4401BE00914B86 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFE3361D4401BE00914B86 /* InterfaceController.swift */; };
+		25BFE3391D4401BE00914B86 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFE3381D4401BE00914B86 /* ExtensionDelegate.swift */; };
+		25BFE33B1D4401BE00914B86 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFE33A1D4401BE00914B86 /* NotificationController.swift */; };
+		25BFE33D1D4401BE00914B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE33C1D4401BE00914B86 /* Assets.xcassets */; };
+		25BFE3411D4401BE00914B86 /* MyPlacesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 25BFE3231D4401BE00914B86 /* MyPlacesWatch.app */; };
+		25BFE3521D46840800914B86 /* route2.png in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE3511D46840800914B86 /* route2.png */; };
+		25BFE3541D46971A00914B86 /* qr2.png in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE3531D46971A00914B86 /* qr2.png */; };
+		25BFE3561D46CAC900914B86 /* route-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE3551D46CAC900914B86 /* route-icon.png */; };
+		25BFE3581D46CE5400914B86 /* pinRoute.png in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE3571D46CE5400914B86 /* pinRoute.png */; };
+		25BFE35A1D46E21D00914B86 /* route_mm.png in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE3591D46E21D00914B86 /* route_mm.png */; };
+		25BFE35C1D47CBB700914B86 /* qr_b3.png in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE35B1D47CBB700914B86 /* qr_b3.png */; };
+		25BFE3641D4825DF00914B86 /* iconMain58pt_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE3631D4825DF00914B86 /* iconMain58pt_v2.png */; };
+		25BFE3681D48279500914B86 /* iconMain80pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE3671D48279500914B86 /* iconMain80pt.png */; };
+		25BFE36A1D48280900914B86 /* iconMain120pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE3691D48280900914B86 /* iconMain120pt.png */; };
+		25BFE36C1D48286500914B86 /* iconMain180pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE36B1D48286500914B86 /* iconMain180pt.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25BFE3311D4401BE00914B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25BFE2E11D3FD03A00914B86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25BFE32E1D4401BE00914B86;
+			remoteInfo = "MyPlacesWatch Extension";
+		};
+		25BFE33F1D4401BE00914B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25BFE2E11D3FD03A00914B86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25BFE3221D4401BE00914B86;
+			remoteInfo = MyPlacesWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25BFE3451D4401BE00914B86 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				25BFE3301D4401BE00914B86 /* MyPlacesWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25BFE3491D4401BE00914B86 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				25BFE3411D4401BE00914B86 /* MyPlacesWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		25BFE2E91D3FD03A00914B86 /* MyPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,10 +104,38 @@
 		25BFE31B1D43B92F00914B86 /* VistaMapaRutaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaMapaRutaController.swift; sourceTree = "<group>"; };
 		25BFE31D1D43DB0500914B86 /* VistaQRController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaQRController.swift; sourceTree = "<group>"; };
 		25BFE31F1D43ED4800914B86 /* VistaCamaraQRController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaCamaraQRController.swift; sourceTree = "<group>"; };
+		25BFE3231D4401BE00914B86 /* MyPlacesWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlacesWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25BFE3261D4401BE00914B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		25BFE3281D4401BE00914B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25BFE32A1D4401BE00914B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25BFE32F1D4401BE00914B86 /* MyPlacesWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MyPlacesWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25BFE3351D4401BE00914B86 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		25BFE3361D4401BE00914B86 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		25BFE3381D4401BE00914B86 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		25BFE33A1D4401BE00914B86 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		25BFE33C1D4401BE00914B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25BFE33E1D4401BE00914B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25BFE3511D46840800914B86 /* route2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = route2.png; path = ../../../../../Desktop/route2.png; sourceTree = "<group>"; };
+		25BFE3531D46971A00914B86 /* qr2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = qr2.png; path = ../../../../../Desktop/qr2.png; sourceTree = "<group>"; };
+		25BFE3551D46CAC900914B86 /* route-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "route-icon.png"; path = "../../../../../Desktop/route-icon.png"; sourceTree = "<group>"; };
+		25BFE3571D46CE5400914B86 /* pinRoute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinRoute.png; path = ../../../../../Desktop/pinRoute.png; sourceTree = "<group>"; };
+		25BFE3591D46E21D00914B86 /* route_mm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = route_mm.png; path = ../../../../../Desktop/route_mm.png; sourceTree = "<group>"; };
+		25BFE35B1D47CBB700914B86 /* qr_b3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = qr_b3.png; path = ../../../../share_with_linux/qr_b3.png; sourceTree = "<group>"; };
+		25BFE3631D4825DF00914B86 /* iconMain58pt_v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconMain58pt_v2.png; path = ../../../../share_with_linux/iconMain58pt_v2.png; sourceTree = "<group>"; };
+		25BFE3671D48279500914B86 /* iconMain80pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconMain80pt.png; path = ../../../../share_with_linux/iconMain80pt.png; sourceTree = "<group>"; };
+		25BFE3691D48280900914B86 /* iconMain120pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconMain120pt.png; path = ../../../../share_with_linux/iconMain120pt.png; sourceTree = "<group>"; };
+		25BFE36B1D48286500914B86 /* iconMain180pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconMain180pt.png; path = ../../../../share_with_linux/iconMain180pt.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		25BFE2E61D3FD03A00914B86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25BFE32C1D4401BE00914B86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				25BFE2EB1D3FD03A00914B86 /* MyPlaces */,
+				25BFE3241D4401BE00914B86 /* MyPlacesWatch */,
+				25BFE3331D4401BE00914B86 /* MyPlacesWatch Extension */,
 				25BFE2EA1D3FD03A00914B86 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				25BFE2E91D3FD03A00914B86 /* MyPlaces.app */,
+				25BFE3231D4401BE00914B86 /* MyPlacesWatch.app */,
+				25BFE32F1D4401BE00914B86 /* MyPlacesWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +168,7 @@
 		25BFE2EB1D3FD03A00914B86 /* MyPlaces */ = {
 			isa = PBXGroup;
 			children = (
+				25BFE34A1D465A4600914B86 /* images */,
 				25BFE3111D41F45400914B86 /* LaunchScreen.storyboard */,
 				25BFE2EC1D3FD03A00914B86 /* AppDelegate.swift */,
 				25BFE2EE1D3FD03A00914B86 /* MenuPrincipalVC.swift */,
@@ -97,6 +190,54 @@
 			path = MyPlaces;
 			sourceTree = "<group>";
 		};
+		25BFE3241D4401BE00914B86 /* MyPlacesWatch */ = {
+			isa = PBXGroup;
+			children = (
+				25BFE3251D4401BE00914B86 /* Interface.storyboard */,
+				25BFE3281D4401BE00914B86 /* Assets.xcassets */,
+				25BFE32A1D4401BE00914B86 /* Info.plist */,
+			);
+			path = MyPlacesWatch;
+			sourceTree = "<group>";
+		};
+		25BFE3331D4401BE00914B86 /* MyPlacesWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				25BFE3361D4401BE00914B86 /* InterfaceController.swift */,
+				25BFE3381D4401BE00914B86 /* ExtensionDelegate.swift */,
+				25BFE33A1D4401BE00914B86 /* NotificationController.swift */,
+				25BFE33C1D4401BE00914B86 /* Assets.xcassets */,
+				25BFE33E1D4401BE00914B86 /* Info.plist */,
+				25BFE3341D4401BE00914B86 /* Supporting Files */,
+			);
+			path = "MyPlacesWatch Extension";
+			sourceTree = "<group>";
+		};
+		25BFE3341D4401BE00914B86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25BFE3351D4401BE00914B86 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25BFE34A1D465A4600914B86 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				25BFE36B1D48286500914B86 /* iconMain180pt.png */,
+				25BFE3691D48280900914B86 /* iconMain120pt.png */,
+				25BFE3671D48279500914B86 /* iconMain80pt.png */,
+				25BFE3631D4825DF00914B86 /* iconMain58pt_v2.png */,
+				25BFE35B1D47CBB700914B86 /* qr_b3.png */,
+				25BFE3591D46E21D00914B86 /* route_mm.png */,
+				25BFE3571D46CE5400914B86 /* pinRoute.png */,
+				25BFE3551D46CAC900914B86 /* route-icon.png */,
+				25BFE3531D46971A00914B86 /* qr2.png */,
+				25BFE3511D46840800914B86 /* route2.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,15 +248,51 @@
 				25BFE2E51D3FD03A00914B86 /* Sources */,
 				25BFE2E61D3FD03A00914B86 /* Frameworks */,
 				25BFE2E71D3FD03A00914B86 /* Resources */,
+				25BFE3491D4401BE00914B86 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				25BFE3401D4401BE00914B86 /* PBXTargetDependency */,
 			);
 			name = MyPlaces;
 			productName = MyPlaces;
 			productReference = 25BFE2E91D3FD03A00914B86 /* MyPlaces.app */;
 			productType = "com.apple.product-type.application";
+		};
+		25BFE3221D4401BE00914B86 /* MyPlacesWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25BFE3461D4401BE00914B86 /* Build configuration list for PBXNativeTarget "MyPlacesWatch" */;
+			buildPhases = (
+				25BFE3211D4401BE00914B86 /* Resources */,
+				25BFE3451D4401BE00914B86 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25BFE3321D4401BE00914B86 /* PBXTargetDependency */,
+			);
+			name = MyPlacesWatch;
+			productName = MyPlacesWatch;
+			productReference = 25BFE3231D4401BE00914B86 /* MyPlacesWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		25BFE32E1D4401BE00914B86 /* MyPlacesWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25BFE3421D4401BE00914B86 /* Build configuration list for PBXNativeTarget "MyPlacesWatch Extension" */;
+			buildPhases = (
+				25BFE32B1D4401BE00914B86 /* Sources */,
+				25BFE32C1D4401BE00914B86 /* Frameworks */,
+				25BFE32D1D4401BE00914B86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyPlacesWatch Extension";
+			productName = "MyPlacesWatch Extension";
+			productReference = 25BFE32F1D4401BE00914B86 /* MyPlacesWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -129,6 +306,13 @@
 				TargetAttributes = {
 					25BFE2E81D3FD03A00914B86 = {
 						CreatedOnToolsVersion = 7.3.1;
+					};
+					25BFE3221D4401BE00914B86 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					25BFE32E1D4401BE00914B86 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PX4CMRSFTG;
 					};
 				};
 			};
@@ -146,6 +330,8 @@
 			projectRoot = "";
 			targets = (
 				25BFE2E81D3FD03A00914B86 /* MyPlaces */,
+				25BFE3221D4401BE00914B86 /* MyPlacesWatch */,
+				25BFE32E1D4401BE00914B86 /* MyPlacesWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -155,9 +341,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25BFE3581D46CE5400914B86 /* pinRoute.png in Resources */,
+				25BFE36A1D48280900914B86 /* iconMain120pt.png in Resources */,
+				25BFE3681D48279500914B86 /* iconMain80pt.png in Resources */,
 				25BFE3101D41F44600914B86 /* Main.storyboard in Resources */,
+				25BFE36C1D48286500914B86 /* iconMain180pt.png in Resources */,
+				25BFE3541D46971A00914B86 /* qr2.png in Resources */,
+				25BFE3521D46840800914B86 /* route2.png in Resources */,
+				25BFE3641D4825DF00914B86 /* iconMain58pt_v2.png in Resources */,
 				25BFE3121D41F45400914B86 /* LaunchScreen.storyboard in Resources */,
+				25BFE35C1D47CBB700914B86 /* qr_b3.png in Resources */,
+				25BFE3561D46CAC900914B86 /* route-icon.png in Resources */,
 				25BFE2F71D3FD03A00914B86 /* Assets.xcassets in Resources */,
+				25BFE35A1D46E21D00914B86 /* route_mm.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25BFE3211D4401BE00914B86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25BFE3291D4401BE00914B86 /* Assets.xcassets in Resources */,
+				25BFE3271D4401BE00914B86 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25BFE32D1D4401BE00914B86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25BFE33D1D4401BE00914B86 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +397,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25BFE32B1D4401BE00914B86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25BFE33B1D4401BE00914B86 /* NotificationController.swift in Sources */,
+				25BFE3391D4401BE00914B86 /* ExtensionDelegate.swift in Sources */,
+				25BFE3371D4401BE00914B86 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25BFE3321D4401BE00914B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25BFE32E1D4401BE00914B86 /* MyPlacesWatch Extension */;
+			targetProxy = 25BFE3311D4401BE00914B86 /* PBXContainerItemProxy */;
+		};
+		25BFE3401D4401BE00914B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25BFE3221D4401BE00914B86 /* MyPlacesWatch */;
+			targetProxy = 25BFE33F1D4401BE00914B86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25BFE3251D4401BE00914B86 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25BFE3261D4401BE00914B86 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		25BFE2FC1D3FD03A00914B86 /* Debug */ = {
@@ -296,6 +543,68 @@
 			};
 			name = Release;
 		};
+		25BFE3431D4401BE00914B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "MyPlacesWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cl.nnarria.MyPlaces.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		25BFE3441D4401BE00914B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "MyPlacesWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cl.nnarria.MyPlaces.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		25BFE3471D4401BE00914B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = MyPlacesWatch_Extension;
+				INFOPLIST_FILE = MyPlacesWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = cl.nnarria.MyPlaces.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		25BFE3481D4401BE00914B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = MyPlacesWatch_Extension;
+				INFOPLIST_FILE = MyPlacesWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = cl.nnarria.MyPlaces.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -316,6 +625,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		25BFE3421D4401BE00914B86 /* Build configuration list for PBXNativeTarget "MyPlacesWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25BFE3431D4401BE00914B86 /* Debug */,
+				25BFE3441D4401BE00914B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		25BFE3461D4401BE00914B86 /* Build configuration list for PBXNativeTarget "MyPlacesWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25BFE3471D4401BE00914B86 /* Debug */,
+				25BFE3481D4401BE00914B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

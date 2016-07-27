@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MenuPrincipalVC: UIViewController {
+    var msg: String = ""
+    var count: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func irListRuta(sender: AnyObject) {
+        let nvc = self.navigationController
+        count += 1
+        msg = "hola: "
+        nvc?.performSegueWithIdentifier("toListRuta", sender: self)
+        
+        
+    }
 
 }
 
