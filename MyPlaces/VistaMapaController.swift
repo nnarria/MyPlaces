@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import CoreData
 
 protocol TransferirListPunto {
     func transferir(listPunto : [MKMapItem], indexRuta: Int)
@@ -27,6 +28,8 @@ class VistaMapaController: UIViewController, MKMapViewDelegate, CLLocationManage
     
     var listaPunto: [MKMapItem] = [MKMapItem]()
     var indexRuta: Int?
+    var nombreRuta: String = ""
+    var imgRuta: UIImage?
     
     var delegado_ : TransferirListPunto!
     
@@ -42,7 +45,7 @@ class VistaMapaController: UIViewController, MKMapViewDelegate, CLLocationManage
             self.anotaPunto(p)
         }
         
-        print ("RUTA INDEX: \(indexRuta)")
+        //print ("RUTA INDEX: \(indexRuta)")
     }
     
     override func viewDidLoad() {
@@ -120,9 +123,11 @@ class VistaMapaController: UIViewController, MKMapViewDelegate, CLLocationManage
         for ruta in respuesta.routes {
             mapa.addOverlay(ruta.polyline, level: MKOverlayLevel.AboveRoads)
             
+            /*
             for paso in ruta.steps {
                 print (paso.instructions)
             }
+            */
         }
         
         //let centro = origen.placemark.coordinate
@@ -203,7 +208,7 @@ class VistaMapaController: UIViewController, MKMapViewDelegate, CLLocationManage
             
             
             //agregarAlfiler(tmp_loc!)
-            print ("debo agregar alfiler segun se solicite")
+            //print ("debo agregar alfiler segun se solicite")
 
             //distanciaText.text = "\(round(distanciaAcumulada))" + " Mts"
         }
@@ -252,12 +257,81 @@ class VistaMapaController: UIViewController, MKMapViewDelegate, CLLocationManage
         let allAnnotations = self.mapa.annotations
         self.mapa.removeAnnotations(allAnnotations)
         
+        
+        //print ("buscar ruta: " + self.nombreRuta)
+        
+        /*
+        
+        let contexto = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        
+        let rutaEntidad = NSEntityDescription.entityForName("Ruta", inManagedObjectContext: contexto)
+        let peticion = rutaEntidad?.managedObjectModel.fetchRequestFromTemplateWithName("petRuta", substitutionVariables: ["nombre": nombreRuta])
+        
+        
+        do {
+            let rutaEntidad_ = try contexto.executeFetchRequest(peticion!)
+            
+            if (rutaEntidad_.count == 0) {
+                return
+            }
+            
+            rutaEntidad_[0].valueForKey("posee")
+            self.contexto?.deleteObject(rutaEntidad_![0] as! NSManagedObject)
+        }
+        catch {
+        }
+        
+        do {
+            try self.contexto?.save()
+        }
+        catch {
+            
+        }
+
+        */
+        
+        
+        
         //mapa.annotations[mapa.annotations.endIndex]
         //mapa.removeAnnotation(mapa.annotations[mapa.annotations.endIndex])
         self.listaPunto.removeAll()
     }
     
     
+    @IBAction func compartirRedesSociales(sender: UIBarButtonItem) {
+        var datos: String = ""
+        var i = 0
+        
+        
+        for p in self.listaPunto {
+            let latitud = p.placemark.coordinate.latitude
+            let longitud = p.placemark.coordinate.longitude
+            let nombre = "" + p.name!
+            
+            datos += "\(nombre) [p_\(i)]\n"
+            datos += "\(latitud), \(longitud)\n\n"
+            
+            i += 1
+        }
+        
+
+
+        
+        if let image = UIImage(named: "route-icon") {
+            let vc = UIActivityViewController(activityItems: [datos, image], applicationActivities: [])
+            presentViewController(vc, animated: true, completion: nil)
+        }
+        
+        
+        /*
+        let aRD = UIActivityViewController(activityItems: [datos], applicationActivities: nil)
+        
+        self.presentViewController(aRD, animated: true, completion: nil)
+        */
+        
+        
+        
+    }
     
     
     // MARK: - Navigation
@@ -279,6 +353,19 @@ class VistaMapaController: UIViewController, MKMapViewDelegate, CLLocationManage
         if (segue.identifier == "irMapa") {
             print ("De regreso a menu de rutas")
         }
+        
+        if (segue.identifier == "irAR") {
+            
+            
+            let svc = segue.destinationViewController as! RealidadAumentadaViewController
+            svc.nombreRuta = self.nombreRuta
+            svc.puntos = self.listaPunto
+            svc.latitudActual = self.puntoActual.placemark.coordinate.latitude
+            svc.longitudActual = self.puntoActual.placemark.coordinate.longitude
+            
+            //print ("hola voy a ARRRRRR: " + svc.nombreRuta)
+        }
+
         
                
     }

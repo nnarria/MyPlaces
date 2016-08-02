@@ -27,7 +27,7 @@ class EditarRutaTableViewController: UITableViewController, UIImagePickerControl
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        print ("en editarruta: \(nRuta)")
+        //print ("en editarruta: \(nRuta)")
         self.nombreRuta.text = nRuta
         self.descripcionRuta.text = dRuta
         self.fotoVista.image = iRuta

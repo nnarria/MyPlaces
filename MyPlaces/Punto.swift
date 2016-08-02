@@ -11,12 +11,12 @@ import Foundation
 class Punto {
     var longitud: Double
     var latitud: Double
-    var color: String
+    var nombre: String
     
-    init (longitud: Double, latitud: Double, color: String) {
+    init (longitud: Double, latitud: Double, nombre: String) {
         self.longitud = longitud
         self.latitud = latitud
-        self.color = color
+        self.nombre = nombre
     }
     
     
