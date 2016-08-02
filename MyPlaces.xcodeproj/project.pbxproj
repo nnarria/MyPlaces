@@ -32,7 +32,6 @@
 		25BFE3061D403BB900914B86 /* Punto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFE3051D403BB900914B86 /* Punto.swift */; };
 		25BFE30A1D40447100914B86 /* TablaListRutaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFE3091D40447100914B86 /* TablaListRutaController.swift */; };
 		25BFE30E1D4134C300914B86 /* NuevaRutaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFE30D1D4134C300914B86 /* NuevaRutaTableViewController.swift */; };
-		25BFE3101D41F44600914B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE30F1D41F44600914B86 /* Main.storyboard */; };
 		25BFE3121D41F45400914B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE3111D41F45400914B86 /* LaunchScreen.storyboard */; };
 		25BFE3141D428AA100914B86 /* Ruta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFE3131D428AA100914B86 /* Ruta.swift */; };
 		25BFE3161D42D19400914B86 /* EditarRutaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFE3151D42D19400914B86 /* EditarRutaTableViewController.swift */; };
@@ -49,6 +48,7 @@
 		25BFE33D1D4401BE00914B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE33C1D4401BE00914B86 /* Assets.xcassets */; };
 		25BFE3411D4401BE00914B86 /* MyPlacesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 25BFE3231D4401BE00914B86 /* MyPlacesWatch.app */; };
 		25F8B6921D505F7A00784350 /* TestAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8B6911D505F7A00784350 /* TestAnnotationView.swift */; };
+		25F8B6961D50D29A00784350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F8B6951D50D29A00784350 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,7 +121,6 @@
 		25BFE3051D403BB900914B86 /* Punto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Punto.swift; sourceTree = "<group>"; };
 		25BFE3091D40447100914B86 /* TablaListRutaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablaListRutaController.swift; sourceTree = "<group>"; };
 		25BFE30D1D4134C300914B86 /* NuevaRutaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuevaRutaTableViewController.swift; sourceTree = "<group>"; };
-		25BFE30F1D41F44600914B86 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		25BFE3111D41F45400914B86 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25BFE3131D428AA100914B86 /* Ruta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ruta.swift; sourceTree = "<group>"; };
 		25BFE3151D42D19400914B86 /* EditarRutaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditarRutaTableViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +140,7 @@
 		25BFE33C1D4401BE00914B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25BFE33E1D4401BE00914B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25F8B6911D505F7A00784350 /* TestAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAnnotationView.swift; sourceTree = "<group>"; };
+		25F8B6951D50D29A00784350 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,13 +222,13 @@
 		25BFE2EB1D3FD03A00914B86 /* MyPlaces */ = {
 			isa = PBXGroup;
 			children = (
+				25F8B6951D50D29A00784350 /* Main.storyboard */,
 				257D47C41D49B6AD003AB6E2 /* Resources */,
 				257D47B61D49B645003AB6E2 /* Classes */,
 				25BFE3111D41F45400914B86 /* LaunchScreen.storyboard */,
 				25BFE2EC1D3FD03A00914B86 /* AppDelegate.swift */,
 				25BFE2EE1D3FD03A00914B86 /* MenuPrincipalVC.swift */,
 				25BFE2F61D3FD03A00914B86 /* Assets.xcassets */,
-				25BFE30F1D41F44600914B86 /* Main.storyboard */,
 				25BFE2FB1D3FD03A00914B86 /* Info.plist */,
 				25BFE2F31D3FD03A00914B86 /* MyPlaces.xcdatamodeld */,
 				25BFE3031D3FD8F000914B86 /* NavegacionNVC.swift */,
@@ -384,12 +384,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25BFE3101D41F44600914B86 /* Main.storyboard in Resources */,
 				257D47CA1D49B6BF003AB6E2 /* hdar_close.png in Resources */,
 				257D47CC1D49B6BF003AB6E2 /* hdar_close@3x.png in Resources */,
 				25BFE3121D41F45400914B86 /* LaunchScreen.storyboard in Resources */,
 				25BFE2F71D3FD03A00914B86 /* Assets.xcassets in Resources */,
 				257D47CB1D49B6BF003AB6E2 /* hdar_close@2x.png in Resources */,
+				25F8B6961D50D29A00784350 /* Main.storyboard in Resources */,
 				257D47C91D49B6BF003AB6E2 /* DebugMapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
