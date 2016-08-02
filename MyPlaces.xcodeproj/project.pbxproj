@@ -21,7 +21,6 @@
 		257D47D01D49B8BE003AB6E2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257D47CF1D49B8BE003AB6E2 /* CoreMotion.framework */; };
 		257D47D21D49B8C5003AB6E2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257D47D11D49B8C5003AB6E2 /* MapKit.framework */; };
 		257D47D41D49BA74003AB6E2 /* RealidadAumentadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D47D31D49BA74003AB6E2 /* RealidadAumentadaViewController.swift */; };
-		257D47D61D49BC14003AB6E2 /* TestAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D47D51D49BC14003AB6E2 /* TestAnnotationView.swift */; };
 		257D47FE1D500A0A003AB6E2 /* TablaEventosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D47FD1D500A0A003AB6E2 /* TablaEventosTableViewController.swift */; };
 		257D48001D500A54003AB6E2 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D47FF1D500A54003AB6E2 /* Evento.swift */; };
 		257D48021D5012C2003AB6E2 /* CeldaEventoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D48011D5012C2003AB6E2 /* CeldaEventoTableViewCell.swift */; };
@@ -49,6 +48,7 @@
 		25BFE33B1D4401BE00914B86 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFE33A1D4401BE00914B86 /* NotificationController.swift */; };
 		25BFE33D1D4401BE00914B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BFE33C1D4401BE00914B86 /* Assets.xcassets */; };
 		25BFE3411D4401BE00914B86 /* MyPlacesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 25BFE3231D4401BE00914B86 /* MyPlacesWatch.app */; };
+		25F8B6921D505F7A00784350 /* TestAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8B6911D505F7A00784350 /* TestAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,7 +108,6 @@
 		257D47CF1D49B8BE003AB6E2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		257D47D11D49B8C5003AB6E2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		257D47D31D49BA74003AB6E2 /* RealidadAumentadaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealidadAumentadaViewController.swift; sourceTree = "<group>"; };
-		257D47D51D49BC14003AB6E2 /* TestAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestAnnotationView.swift; path = "../../../../../Downloads/HDAugmentedReality-master/HDAugmentedRealityDemo/TestAnnotationView.swift"; sourceTree = "<group>"; };
 		257D47FD1D500A0A003AB6E2 /* TablaEventosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablaEventosTableViewController.swift; sourceTree = "<group>"; };
 		257D47FF1D500A54003AB6E2 /* Evento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
 		257D48011D5012C2003AB6E2 /* CeldaEventoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeldaEventoTableViewCell.swift; sourceTree = "<group>"; };
@@ -141,6 +140,7 @@
 		25BFE33A1D4401BE00914B86 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		25BFE33C1D4401BE00914B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25BFE33E1D4401BE00914B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25F8B6911D505F7A00784350 /* TestAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,10 +242,10 @@
 				25BFE31D1D43DB0500914B86 /* VistaQRController.swift */,
 				25BFE31F1D43ED4800914B86 /* VistaCamaraQRController.swift */,
 				257D47D31D49BA74003AB6E2 /* RealidadAumentadaViewController.swift */,
-				257D47D51D49BC14003AB6E2 /* TestAnnotationView.swift */,
 				257D47FD1D500A0A003AB6E2 /* TablaEventosTableViewController.swift */,
 				257D47FF1D500A54003AB6E2 /* Evento.swift */,
 				257D48011D5012C2003AB6E2 /* CeldaEventoTableViewCell.swift */,
+				25F8B6911D505F7A00784350 /* TestAnnotationView.swift */,
 			);
 			path = MyPlaces;
 			sourceTree = "<group>";
@@ -423,7 +423,6 @@
 				257D47BD1D49B67D003AB6E2 /* ARAnnotation.swift in Sources */,
 				257D47FE1D500A0A003AB6E2 /* TablaEventosTableViewController.swift in Sources */,
 				257D47C11D49B67D003AB6E2 /* ARViewController.swift in Sources */,
-				257D47D61D49BC14003AB6E2 /* TestAnnotationView.swift in Sources */,
 				25BFE3061D403BB900914B86 /* Punto.swift in Sources */,
 				25BFE31C1D43B92F00914B86 /* VistaMapaRutaController.swift in Sources */,
 				257D47BE1D49B67D003AB6E2 /* ARAnnotationView.swift in Sources */,
@@ -439,6 +438,7 @@
 				257D47C31D49B696003AB6E2 /* DebugMapViewController.swift in Sources */,
 				25BFE3161D42D19400914B86 /* EditarRutaTableViewController.swift in Sources */,
 				25BFE2F51D3FD03A00914B86 /* MyPlaces.xcdatamodeld in Sources */,
+				25F8B6921D505F7A00784350 /* TestAnnotationView.swift in Sources */,
 				257D47D41D49BA74003AB6E2 /* RealidadAumentadaViewController.swift in Sources */,
 				25BFE31A1D4313BC00914B86 /* VistaMapaController.swift in Sources */,
 				25BFE2ED1D3FD03A00914B86 /* AppDelegate.swift in Sources */,

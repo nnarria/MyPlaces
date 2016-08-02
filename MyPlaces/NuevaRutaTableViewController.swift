@@ -22,6 +22,9 @@ class NuevaRutaTableViewController: UITableViewController, UIImagePickerControll
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.fotoVista.image = UIImage(named: "iconMain120pt")
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

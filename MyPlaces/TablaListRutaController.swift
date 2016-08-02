@@ -181,7 +181,7 @@ class TablaListRutaController: UITableViewController, TransferirListPunto {
                 }
                 */
             
-                let rr = Ruta(puntos: [], nombre: nuevaRuta.nombreRuta.text!, descripcion: nuevaRuta.descripcionRuta.text!, imagen: img)
+                let rr = Ruta(puntos: [], nombre: nuevaRuta.nombreRuta.text!, descripcion: "" + nuevaRuta.descripcionRuta.text!, imagen: img)
                 
                 
                 let nuevaRutaEntidad = NSEntityDescription.insertNewObjectForEntityForName("Ruta", inManagedObjectContext: self.contexto!)

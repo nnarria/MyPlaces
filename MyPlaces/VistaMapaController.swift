@@ -149,11 +149,12 @@ class VistaMapaController: UIViewController, MKMapViewDelegate, CLLocationManage
     }
     
     func anotaPunto (punto: MKMapItem) {
-        let anota = MKPointAnnotation()
-        anota.coordinate = punto.placemark.coordinate
-        anota.title = punto.name
-        
-        mapa.addAnnotation(anota)
+        if (punto.name?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()) != "") {
+            let anota = MKPointAnnotation()
+            anota.coordinate = punto.placemark.coordinate
+            anota.title = punto.name
+            mapa.addAnnotation(anota)
+        }
     }
 
     
@@ -204,7 +205,7 @@ class VistaMapaController: UIViewController, MKMapViewDelegate, CLLocationManage
             let puntoLugar = MKPlacemark (coordinate: puntoCoor, addressDictionary: nil)
             
             puntoActual = MKMapItem(placemark: puntoLugar)
-            puntoActual.name = self.nombrePunto.text!
+            puntoActual.name = "" + self.nombrePunto.text!
             
             
             //agregarAlfiler(tmp_loc!)
@@ -215,17 +216,21 @@ class VistaMapaController: UIViewController, MKMapViewDelegate, CLLocationManage
     }
     
     @IBAction func marcarLugar(sender: UIBarButtonItem) {
-        self.listaPunto.append(puntoActual)
-        
-        self.anotaPunto(puntoActual!)
         
         
-        //delegado_.transferir("hola desde marcarLugar: ")
+        if (self.puntoActual.name?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()) != "") {
+            self.listaPunto.append(puntoActual)
         
-        self.nombrePunto.text = ""
-        self.nombrePunto.resignFirstResponder()
+            self.anotaPunto(puntoActual!)
         
-        delegado_.transferir(listaPunto, indexRuta: indexRuta!)
+        
+            //delegado_.transferir("hola desde marcarLugar: ")
+        
+            self.nombrePunto.text = ""
+            self.nombrePunto.resignFirstResponder()
+        
+            delegado_.transferir(listaPunto, indexRuta: indexRuta!)
+        }
     }
     
     /*
